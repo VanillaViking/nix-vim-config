@@ -12,6 +12,14 @@
 
       clangd.enable = true;
     };
+
+    keymaps.lspBuf = {
+      gr = "references";
+      gd = "definition";
+      gi = "implementation";
+      gt = "type_definition";
+      ga = "code_action";
+    };
   };
 
   plugins.nvim-cmp = {

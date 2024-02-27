@@ -64,6 +64,11 @@
       action = ":Telescope find_files<CR>";
     }
 
+    {
+      key = "<C-f>";
+      action = ":Oil";
+    }
+
     # misc
     {
       key = "S";
