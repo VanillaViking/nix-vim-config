@@ -15,12 +15,6 @@
       shiftwidth = 2;
     };
 
-    extraConfigLuaPost = ''
-      local nvim_lsp = require'nvim_lsp'
-      nvim_lsp.clangd.setup{
-        root_dir = nvim_lsp.util.root_pattern('.git');
-      }
-    '';
   };
 
 }
