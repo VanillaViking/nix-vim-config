@@ -1,11 +1,7 @@
 {
   plugins.lsp = {
     enable = true;
-    onAttach = ''
-      function(client, bufnr)
-        vim.api.nvim_set_current_dir(client.config.root_dir)
-      end
-    '';
+    onAttach = "function(client, bufnr) vim.api.nvim_set_current_dir(client.config.root_dir) end";
     servers = {
       tsserver.enable = true;
 
