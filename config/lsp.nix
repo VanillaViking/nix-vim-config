@@ -11,7 +11,7 @@
       lua-ls.enable = true;
 
       clangd.enable = true;
-      clangd.rootDir = "vim.fn.getcwd()";
+      clangd.rootDir = "function() vim.fn.getcwd() end";
     };
 
     keymaps.lspBuf = {
