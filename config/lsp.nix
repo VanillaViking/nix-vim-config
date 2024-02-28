@@ -10,7 +10,15 @@
 
       lua-ls.enable = true;
 
-      clangd.enable = true;
+      ccls.enable = true;
+    };
+
+    keymaps.lspBuf = {
+      gr = "references";
+      gd = "definition";
+      gi = "implementation";
+      gt = "type_definition";
+      ga = "code_action";
     };
   };
 
@@ -36,6 +44,13 @@
           end
         '';
         modes = [ "i" "s" ];
+      };
+      "<S-Tab>" = {
+        action = "cmp.mapping.select_prev_item()";
+        modes = [
+          "i"
+            "s"
+        ];
       };
     };
   };

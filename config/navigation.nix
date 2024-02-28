@@ -8,6 +8,8 @@
 
     fugitive.enable = true;
 
+    undotree.enable = true;
+
   };
   
 }

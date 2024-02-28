@@ -4,6 +4,8 @@
     ./keymaps.nix
     ./lsp.nix
     ./navigation.nix
+    ./usercommands.nix
+    ./obsidian.nix
   ];
 
   config = {
@@ -13,7 +15,9 @@
       number = true;
       relativenumber = true;
       shiftwidth = 2;
+      conceallevel = 2;
     };
+
   };
 
 }

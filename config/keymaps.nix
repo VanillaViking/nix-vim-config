@@ -64,6 +64,11 @@
       action = ":Telescope find_files<CR>";
     }
 
+    {
+      key = "<C-f>";
+      action = ":Oil<CR>";
+    }
+
     # misc
     {
       key = "S";
@@ -77,6 +82,12 @@
     {
       key = "<leader><leader>";
       action = "/<?><CR>d3l";
+    }
+
+    # LSP
+    {
+      key = "gs";
+      action = ":vsplit | lua vim.lsp.buf.definition()<CR>";
     }
   ];
 }
