@@ -1,8 +1,6 @@
 {
   userCommands = [
-    B = {
-      command = "G checkout -b ashwin/<q-args>";
-      nargs = "1";
-    }
+    B.command = "G checkout -b ashwin/<q-args>";
+    B.nargs = "1";
   ];
 }
