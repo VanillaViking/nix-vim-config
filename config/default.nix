@@ -4,6 +4,7 @@
     ./keymaps.nix
     ./lsp.nix
     ./navigation.nix
+    ./usercommands.nix
   ];
 
   config = {
