@@ -66,7 +66,7 @@
 
     {
       key = "<C-f>";
-      action = ":Oil";
+      action = ":Oil<CR>";
     }
 
     # misc
