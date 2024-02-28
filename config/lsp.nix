@@ -43,15 +43,15 @@
             end
           end
         '';
-        "<S-Tab>" = {
-          action = "cmp.mapping.select_prev_item()";
-          modes = [
-            "i"
-              "s"
-          ];
         modes = [ "i" "s" ];
       };
-    };
+      "<S-Tab>" = {
+        action = "cmp.mapping.select_prev_item()";
+        modes = [
+          "i"
+            "s"
+        ];
+      };
   };
 
   plugins.luasnip.enable = true;
