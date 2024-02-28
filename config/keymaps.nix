@@ -11,6 +11,10 @@
       key = "<leader>e3";
       action = ":vsplit ~/.config/i3/config<CR>";
     }
+    {
+      key = "<leader>z";
+      action = "<C-y>:!nohup zathura '<C-r>\"' &<CR>";
+    }
 
     # windows/navigation
     {
