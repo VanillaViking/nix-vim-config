@@ -52,6 +52,7 @@
             "s"
         ];
       };
+    };
   };
 
   plugins.luasnip.enable = true;
