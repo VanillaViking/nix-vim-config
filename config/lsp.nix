@@ -19,6 +19,7 @@
       gi = "implementation";
       gt = "type_definition";
       ga = "code_action";
+      "<leader>rn" = "rename";
     };
   };
 
@@ -56,4 +57,5 @@
   };
 
   plugins.luasnip.enable = true;
+  plugins.commentary.enable = true;
 }
