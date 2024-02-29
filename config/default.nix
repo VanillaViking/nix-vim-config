@@ -11,6 +11,14 @@
   config = {
     colorschemes.rose-pine.enable = true;
 
+    autoCmd = [
+      {
+        event = [ "BufWritePost" ];
+        pattern = [ "*.typ" ];
+        command = ":!typst compile %";
+      }
+    ];
+
     options = {
       number = true;
       relativenumber = true;
