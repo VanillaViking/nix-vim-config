@@ -34,8 +34,8 @@
     ];
     snippet.expand = "luasnip";
     mapping = {
-      "<M-k>" = "cmp.mapping.scroll_docs(-4)";
-      "<M-j>" = "cmp.mapping.scroll_docs(4)";
+      "<leader>k" = "cmp.mapping.scroll_docs(-4)";
+      "<leader>j" = "cmp.mapping.scroll_docs(4)";
       "<CR>" = "cmp.mapping.confirm({ select = true })";
       "<Tab>" = {
         action = ''
