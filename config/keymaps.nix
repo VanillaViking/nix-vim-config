@@ -80,8 +80,12 @@
       action = ":%s//g<Left><Left>";
     }
     {
-      key = "<leader>v";
+      key = "Y";
       action = "\"+y";
+    }
+    {
+      key = "<leader>v";
+      action = "\"+p";
     }
     {
       key = "<leader><leader>";
