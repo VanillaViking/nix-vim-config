@@ -13,7 +13,7 @@
     }
     {
       key = "<leader>z";
-      action = "<C-y>:!nohup zathura '<C-r>\"' &<CR>";
+      action = ":!nohup zathura '<C-r>\"' &<CR>";
     }
 
     # windows/navigation
