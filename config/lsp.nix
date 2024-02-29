@@ -20,6 +20,7 @@
       gt = "type_definition";
       ga = "code_action";
       "<leader>rn" = "rename";
+      gq = "hover";
     };
   };
 
