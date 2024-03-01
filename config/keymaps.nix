@@ -97,5 +97,9 @@
       key = "gs";
       action = ":vsplit | lua vim.lsp.buf.definition()<CR>";
     }
+    {
+      key = "<leader>w";
+      action = ":wincmd w";
+    }
   ];
 }
