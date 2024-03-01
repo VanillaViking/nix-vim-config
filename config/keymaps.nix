@@ -99,7 +99,7 @@
     }
     {
       key = "<leader>w";
-      action = ":wincmd w";
+      action = ":wincmd w<CR>";
     }
   ];
 }
