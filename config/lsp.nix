@@ -36,8 +36,8 @@
     mapping = {
       "<C-d>" = "cmp.mapping.scroll_docs(-4)";
       "<C-u>" = "cmp.mapping.scroll_docs(4)";
-      "<CR>" = "cmp.mapping.confirm({ select = true })";
-      "<Tab>" = {
+      "<C-Enter>" = "cmp.mapping.confirm({ select = true })";
+      "<C-n>" = {
         action = ''
           function(fallback)
             if cmp.visible() then
@@ -49,7 +49,7 @@
         '';
         modes = [ "i" "s" ];
       };
-      "<S-Tab>" = {
+      "<C-p>" = {
         action = "cmp.mapping.select_prev_item()";
         modes = [
           "i"
