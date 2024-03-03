@@ -3,6 +3,7 @@
     enable = true;
     servers = {
       tsserver.enable = true;
+      tailwindcss.enable = true;
 
       rust-analyzer.enable = true;
       rust-analyzer.installCargo = true;
