@@ -101,5 +101,9 @@
       key = "<leader>w";
       action = ":wincmd w<CR>";
     }
+    {
+      key = "<leader>d";
+      action = ":lua vim.diagnostic.open_float()<CR>";
+    }
   ];
 }
