@@ -12,6 +12,8 @@
       lua-ls.enable = true;
 
       clangd.enable = true;
+
+      typst-lsp.enable = true;
     };
 
     keymaps.lspBuf = {
