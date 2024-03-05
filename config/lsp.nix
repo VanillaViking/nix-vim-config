@@ -62,4 +62,5 @@
 
   plugins.luasnip.enable = true;
   plugins.commentary.enable = true;
+  plugins.typst-vim.enable = true;
 }
