@@ -13,6 +13,8 @@
 
     undotree.enable = true;
 
+    surround.enable = true;
+
   };
   
 }
