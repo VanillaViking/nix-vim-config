@@ -15,7 +15,7 @@
 
       typst-lsp.enable = true;
 
-      java-language-server.enable = true;
+      nixd.enable = true;
     };
 
     keymaps.lspBuf = {
