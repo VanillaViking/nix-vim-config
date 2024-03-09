@@ -9,6 +9,8 @@
   ];
 
   config = {
+    colorschemes.nord.enable = false;
+    colorschemes.gruvbox.enable = false;
     colorschemes.rose-pine = {
       enable = true;
       style = "main";
