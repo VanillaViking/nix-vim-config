@@ -1,4 +1,4 @@
-{
+{self, pkgs, ...}: {
   # Import all your configuration modules here
   imports = [
     ./keymaps.nix
