@@ -53,7 +53,10 @@
       shiftwidth = 2;
       conceallevel = 2;
     };
-
+  
+    extraPackages = [
+      pkgs.pkgsCross.avr.buildPackages.gcc
+    ];
   };
 
 }
