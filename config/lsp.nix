@@ -12,6 +12,9 @@
       lua-ls.enable = true;
 
       clangd.enable = true;
+      clangd.extraOptions = {
+	log = "verbose";
+      };
 
       typst-lsp.enable = true;
 
