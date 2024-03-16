@@ -7,6 +7,7 @@
     ./usercommands.nix
     ./obsidian.nix
     ./colorscheme.nix
+    ./statusline.nix
   ];
 
   config = {
@@ -26,7 +27,6 @@
     };
   
     extraPackages = [
-      pkgs.pkgsCross.avr.buildPackages.gcc
       pkgs.xclip
       pkgs.ripgrep
     ];
