@@ -33,6 +33,7 @@
 
   plugins.nvim-cmp = {
     enable = true;
+    extraOptions.disallow_fuzzy_matching = true;
     autoEnableSources = true;
     sources = [
       {name = "nvim_lsp";}
