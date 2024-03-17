@@ -24,6 +24,7 @@
       relativenumber = true;
       shiftwidth = 2;
       conceallevel = 2;
+      signcolumn = "no";
     };
   
     extraPackages = [
