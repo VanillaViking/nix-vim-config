@@ -11,13 +11,13 @@
   ];
 
   config = {
-    autoCmd = [
-      {
-        event = [ "BufWritePost" ];
-        pattern = [ "*.typ" ];
-        command = ":!typst compile %";
-      }
-    ];
+    #autoCmd = [
+    #  {
+    #    event = [ "BufWritePost" ];
+    #    pattern = [ "*.typ" ];
+    #    command = ":!typst compile %";
+    #  }
+    #];
 
     options = {
       number = true;
