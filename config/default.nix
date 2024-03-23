@@ -26,6 +26,13 @@
       conceallevel = 2;
       signcolumn = "no";
     };
+
+    extraConfigLua = ''
+vim.lsp.start({
+  name = 'nvim-discord-presence',
+  cmd = {'/home/vanilla/projects/rust/nvim-discord-rich-presence/target/debug/nvim-discord-rich-presence'},
+})
+    '';
   
     extraPackages = [
       pkgs.xclip
