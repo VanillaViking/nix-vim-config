@@ -38,7 +38,7 @@ vim.lsp.start({
       pkgs.xclip
       pkgs.ripgrep
       # required by rust analyzer
-      pkgs.libgcc
+      pkgs.gccgo13
     ];
   };
 
