@@ -15,6 +15,8 @@
 
     surround.enable = true;
 
+    sleuth.enable = true;
+
   };
   
 }
