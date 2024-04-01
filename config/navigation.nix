@@ -3,7 +3,7 @@
     telescope.enable = true;
 
     oil.enable = true;
-    oil.keymaps = {
+    oil.settings.keymaps = {
       "<leader>y" = "actions.copy_entry_path";
     };
 
@@ -14,6 +14,8 @@
     undotree.enable = true;
 
     surround.enable = true;
+
+    sleuth.enable = true;
 
   };
   
