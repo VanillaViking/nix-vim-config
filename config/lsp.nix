@@ -31,39 +31,27 @@
     };
   };
 
-  plugins.nvim-cmp = {
+  plugins.cmp = {
     enable = true;
-    extraOptions.disallow_fuzzy_matching = true;
+    settings.matching.disallow_fuzzy_matching = true;
     autoEnableSources = true;
-    sources = [
+    settings.sources = [
       {name = "nvim_lsp";}
       {name = "path";}
       {name = "buffer";}
     ];
-    snippet.expand = "luasnip";
-    mapping = {
-      "<C-d>" = "cmp.mapping.scroll_docs(-4)";
-      "<C-u>" = "cmp.mapping.scroll_docs(4)";
+    settings.snippet.expand = ''
+  function(args)
+    -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+    require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+    -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
+    -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+  end
+    '';
+    settings.mapping = {
       "<C-Enter>" = "cmp.mapping.confirm({ select = true })";
-      "<C-n>" = {
-        action = ''
-          function(fallback)
-            if cmp.visible() then
-              cmp.select_next_item()
-            else
-              fallback()
-            end
-          end
-        '';
-        modes = [ "i" "s" ];
-      };
-      "<C-p>" = {
-        action = "cmp.mapping.select_prev_item()";
-        modes = [
-          "i"
-            "s"
-        ];
-      };
+      "<C-p>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+      "<C-n>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
     };
   };
 

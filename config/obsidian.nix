@@ -1,6 +1,6 @@
 {
   plugins.obsidian = {
     enable = true;
-    dir = "~/Documents/vault";
+    settings.dir = "~/Documents/vault";
   };
 }
