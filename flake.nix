@@ -35,7 +35,19 @@
              inherit pkgs;
           };
         };
+
+        experimentalModule = {
+          inherit pkgs;
+          module = import ./config/experimental.nix; # import the module directly
+          # You can use `extraSpecialArgs` to pass additional arguments to your module files
+          extraSpecialArgs = {
+             inherit pkgs;
+          };
+        };
+
         nvim = nixvim'.makeNixvimWithModule nixvimModule;
+        experimental = nixvim'.makeNixvimWithModule experimentalModule;
+
       in {
         checks = {
           # Run `nix flake check .` to verify that your config is not broken
@@ -45,6 +57,7 @@
         packages = {
           # Lets you run `nix run .` to start nixvim
           default = nvim;
+          experimental = experimental;
         };
       };
     };
