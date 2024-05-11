@@ -43,11 +43,11 @@
     }
 
     {
-      key = "J";
+      key = "<C-d>";
       action = "<C-d>zz";
     }
     {
-      key = "K";
+      key = "<C-u>";
       action = "<C-u>zz";
     }
     {
