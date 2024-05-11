@@ -29,6 +29,11 @@
       gn = "rename";
       gq = "hover";
     };
+
+    keymaps.diagnostic = {
+      "<leader>j" = "goto_next";
+      "<leader>k" = "goto_prev";
+    };
   };
 
   plugins.cmp = {

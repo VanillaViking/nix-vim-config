@@ -57,6 +57,7 @@
         packages = {
           # Lets you run `nix run .` to start nixvim
           default = nvim;
+          # nix run .#experimental
           experimental = experimental;
         };
       };
