@@ -15,8 +15,6 @@
 
       typst-lsp.enable = true;
 
-      nixd.enable = true;
-      
       java-language-server.enable = true;
     };
 
