@@ -1,13 +1,13 @@
 {self, pkgs, ...}: {
   # Import all your configuration modules here
   imports = [
-    ./keymaps.nix
-    ./lsp.nix
-    ./navigation.nix
-    ./usercommands.nix
-    ./obsidian.nix
-    ./colorscheme.nix
-    ./statusline.nix
+    ./modules/keymaps.nix
+    ./modules/lsp.nix
+    ./modules/navigation.nix
+    ./modules/usercommands.nix
+    ./modules/obsidian.nix
+    ./modules/colorscheme.nix
+    ./modules/statusline.nix
   ];
 
   config = {
