@@ -27,11 +27,11 @@
       signcolumn = "no";
     };
 
-    extraConfigLua = ''
-local client = vim.lsp.start({
-  name = 'nvim-discord-presence',
-  cmd = {'/home/vanilla/projects/rust/nvim-discord-rich-presence/target/debug/nvim-discord-rich-presence'},
-})
+    #extraConfigLua = ''
+#local client = vim.lsp.start({
+#  name = 'nvim-discord-presence',
+  #cmd = {'/home/vanilla/projects/rust/nvim-discord-rich-presence/target/debug/nvim-discord-rich-presence'},
+# })
 
 vim.api.nvim_create_autocmd({"FileType"}, {
   pattern = {"*"},
