@@ -45,8 +45,18 @@
           };
         };
 
+        notesModule = {
+          inherit pkgs;
+          module = import ./config/notes.nix; # import the module directly
+          # You can use `extraSpecialArgs` to pass additional arguments to your module files
+          extraSpecialArgs = {
+             inherit pkgs;
+          };
+        };
+
         nvim = nixvim'.makeNixvimWithModule nixvimModule;
         experimental = nixvim'.makeNixvimWithModule experimentalModule;
+        notes = nixvim'.makeNixvimWithModule notesModule;
 
       in {
         checks = {
@@ -59,6 +69,8 @@
           default = nvim;
           # nix run .#experimental
           experimental = experimental;
+          # nix run .#notes
+          notes = notes;
         };
       };
     };
