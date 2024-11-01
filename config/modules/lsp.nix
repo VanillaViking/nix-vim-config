@@ -13,7 +13,7 @@
 
       clangd.enable = true;
 
-      typst-lsp.enable = true;
+      # typst-lsp.enable = true;
 
       java-language-server.enable = true;
     };
