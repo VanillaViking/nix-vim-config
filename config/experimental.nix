@@ -30,7 +30,7 @@
     extraConfigLua = ''
 local id, err = vim.lsp.start_client({
   name = 'nvim-discord-presence',
-  cmd = {'/home/vanilla/projects/rust/nvim-discord-rich-presence/target/debug/nvim-discord-rich-presence'},
+  cmd = {'/home/vanilla/projects/rust/nvim-discord-rich-presence/target/debug/neopresence'},
  })
 
 vim.api.nvim_create_autocmd({"FileType"}, {
