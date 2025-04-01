@@ -93,7 +93,7 @@
     }
     {
       key = "<leader>s";
-      action = "I~~<Esc>A~~";
+      action = "I~~<Esc>A~~<Esc>";
     }
 
     # LSP
