@@ -91,6 +91,10 @@
       key = "<leader><leader>";
       action = "/<?><CR>d3l";
     }
+    {
+      key = "<leader>s";
+      action = "I~~<Esc>A~~";
+    }
 
     # LSP
     {
