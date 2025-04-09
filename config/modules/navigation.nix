@@ -1,3 +1,4 @@
+{lib, config, pkgs, ...}:
 {
   plugins = {
     telescope.enable = true;
@@ -8,6 +9,7 @@
     };
 
     treesitter.enable = true;
+    treesitter.settings.highlight.enable = true;
 
     fugitive.enable = true;
 

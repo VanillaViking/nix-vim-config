@@ -5,7 +5,6 @@
     ./modules/lsp.nix
     ./modules/navigation.nix
     ./modules/usercommands.nix
-    ./modules/obsidian.nix
     ./modules/colorscheme.nix
     ./modules/statusline.nix
   ];
