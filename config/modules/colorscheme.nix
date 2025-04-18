@@ -4,8 +4,8 @@
     colorschemes.gruvbox.enable = false;
     colorschemes.rose-pine = {
       enable = true;
-      style = "main";
-      highlightGroups = {
+      settings.dark_variant = "main";
+      settings.highlight_groups = {
 	StatusLine = { 
 	  fg = "love"; 
 	  bg = "love";

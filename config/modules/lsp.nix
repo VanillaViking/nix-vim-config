@@ -2,20 +2,21 @@
   plugins.lsp = {
     enable = true;
     servers = {
-      tsserver.enable = true;
+      ts_ls.enable = true;
+      denols.enable = true;
       tailwindcss.enable = true;
 
-      rust-analyzer.enable = true;
-      rust-analyzer.installCargo = true;
-      rust-analyzer.installRustc = true;
+      rust_analyzer.enable = true;
+      rust_analyzer.installCargo = true;
+      rust_analyzer.installRustc = true;
 
-      lua-ls.enable = true;
+      lua_ls.enable = true;
 
       clangd.enable = true;
 
       # typst-lsp.enable = true;
 
-      java-language-server.enable = true;
+      java_language_server.enable = true;
     };
 
     keymaps.lspBuf = {

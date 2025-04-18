@@ -2,6 +2,7 @@
 {
   plugins = {
     telescope.enable = true;
+    web-devicons.enable = true;
 
     oil.enable = true;
     oil.settings.keymaps = {
@@ -15,7 +16,7 @@
 
     undotree.enable = true;
 
-    surround.enable = true;
+    vim-surround.enable = true;
 
     sleuth.enable = true;
 
