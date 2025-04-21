@@ -95,6 +95,10 @@
       key = "<leader>s";
       action = "I~~<Esc>A~~<Esc>";
     }
+    {
+      key = "<leader>ml";
+      action = "_wi[<Esc>A]()<Esc>i";
+    }
 
     # LSP
     {
