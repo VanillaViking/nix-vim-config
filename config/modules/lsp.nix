@@ -14,6 +14,8 @@
 
       clangd.enable = true;
 
+      csharp_ls.enable = true;
+
       # typst-lsp.enable = true;
 
       java_language_server.enable = true;
