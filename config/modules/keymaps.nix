@@ -99,6 +99,10 @@
       key = "<leader>ml";
       action = "_wi[<Esc>A]()<Esc>i";
     }
+    {
+      key = "<leader>mf";
+      action = "yi(:e <C-r>\"<CR>";
+    }
 
     # LSP
     {
