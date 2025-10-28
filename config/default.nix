@@ -13,6 +13,7 @@
       number = true;
       relativenumber = true;
       shiftwidth = 2;
+      tabstop = 4;
       conceallevel = 2;
       signcolumn = "no";
     };
