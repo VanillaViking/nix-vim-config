@@ -3,7 +3,7 @@
     enable = true;
     servers = {
       ts_ls.enable = true;
-      denols.enable = true;
+      # denols.enable = true;
       tailwindcss.enable = true;
 
       rust_analyzer.enable = true;
@@ -15,6 +15,8 @@
       clangd.enable = true;
 
       csharp_ls.enable = true;
+
+      pyright.enable = true;
 
       # typst-lsp.enable = true;
 
