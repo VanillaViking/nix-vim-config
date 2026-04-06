@@ -18,6 +18,8 @@
       signcolumn = "no";
     };
 
+    extraConfigLua = "vim.lsp.log.set_level 'error'";
+
     extraPackages = [
       pkgs.xclip
       pkgs.ripgrep
