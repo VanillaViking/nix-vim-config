@@ -12,7 +12,10 @@
 
       lua_ls.enable = true;
 
-      clangd.enable = true;
+      clangd = {
+        enable = true;
+        packageFallback = true;
+      };
 
       csharp_ls.enable = true;
 
